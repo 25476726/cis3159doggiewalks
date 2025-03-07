@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: aliceblue;
+}
+footer {
+    background-color:lightskyblue
+}
+.image, .imagegallery {
+    max-width: 50%;
+}
+.imagegalleryport {
+    max-height: 875px;
+}
