@@ -70,7 +70,7 @@ footer {
         align-items: center; /* Center everything */
         justify-content: center;
         background-color: lightskyblue;
-        padding: 20px 0; /* Add vertical padding */
+        padding: 0px 0; /* Add vertical padding */
         list-style-type: none;
         height: auto; /* Adjust to content */
     }
@@ -79,11 +79,11 @@ footer {
     .navlogo {
         display: flex;
         justify-content: center;
-        margin-bottom: 15px; /* Space between logo and links */
+        margin-bottom: 10px; /* Space between logo and links */
     }
 
     .logo {
-        max-height: 150px;
+        max-height: 125px;
     }
 
     /* Navigation links stacked */
@@ -91,12 +91,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Add spacing between menu items */
+        gap: 5px; /* Add spacing between menu items */
         padding: 0;
     }
 
     .navbar li {
-        padding: 10px 0;
+        padding: 5px 0;
         width: 100%; /* Make each item take full width */
         text-align: center;
     }
@@ -104,8 +104,8 @@ footer {
     .navbar li a {
         text-decoration: none;
         color: black;
-        font-size: 20px;
-        padding: 8px 12px;
+        font-size: 18px;
+        padding: 4px 6px;
         display: block;
         transition: 0.3s;
     }
