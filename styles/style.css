@@ -11,6 +11,18 @@ footer {
 .image, .imagegallery {
     max-width: 50%;
 }
+#banner {
+    position: relative; /* Create a reference for absolute positioning */
+    text-align: center; /* Center text horizontally */
+}
+#banner h1 {
+    position: absolute;
+    top: 10%; 
+    left: 50%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
 .imagegalleryport {
     max-height: 875px;
 }
@@ -34,7 +46,7 @@ footer {
     border-radius: 5px;
     transform: scale(1.1);
 }
-/* Desktop Navigation */
+/* Desktop styles */
 @media (min-aspect-ratio: 1/1) { /* Applies when width > height */
     .navbar {
         display: flex;
@@ -59,8 +71,15 @@ footer {
     .navbar li {
         padding: 10px 15px;
     }
+    .bannerimg {
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 60%; 
+        height: auto; 
+    }
 }
-/* Mobile Navigation */
+/* Mobile styles */
 @media (max-aspect-ratio: 1/1) {  
     .navbar {
         display: flex;
@@ -93,6 +112,13 @@ footer {
         padding: 5px 0;
         width: 100%; /* Make each item take full width */
         text-align: center;
+    }
+    .bannerimg {
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 100%; 
+        height: auto; 
     }
 }
 
