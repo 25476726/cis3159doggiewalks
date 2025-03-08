@@ -6,7 +6,10 @@ header {
     background-color: aliceblue;
 }
 footer {
-    background-color:lightskyblue
+    background-color: lightskyblue;
+}
+.logo {
+    max-height: 150px; 
 }
 .image, .imagegallery {
     max-width: 50%;
@@ -14,3 +17,102 @@ footer {
 .imagegalleryport {
     max-height: 875px;
 }
+
+/* Desktop Navigation */
+@media (min-aspect-ratio: 1/1) { /* Applies when width > height */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Logo on left, items centered */
+        background-color: lightskyblue;
+        padding: 0 20px; /* Remove top/bottom padding to match logo */
+        list-style-type: none;
+        height: auto; /* Dynamically adjust to logo height */
+    }
+
+    /* Logo styling */
+    .navlogo {
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: left;
+    }
+
+    /* Navigation Links */
+    .navbar ul {
+        display: flex;
+        gap: 20px; /* Space between items */
+    }
+
+    .navbar li {
+        padding: 10px 15px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 8px 12px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .navbar li a:hover {
+        background-color: lightgreen;
+        border-radius: 5px;
+    }
+
+}
+/* Mobile Navigation */
+@media (max-aspect-ratio: 1/1) {  
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center everything */
+        justify-content: center;
+        background-color: lightskyblue;
+        padding: 20px 0; /* Add vertical padding */
+        list-style-type: none;
+        height: auto; /* Adjust to content */
+    }
+
+    /* Logo centered on top */
+    .navlogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px; /* Space between logo and links */
+    }
+
+    .logo {
+        max-height: 150px;
+    }
+
+    /* Navigation links stacked */
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Add spacing between menu items */
+        padding: 0;
+    }
+
+    .navbar li {
+        padding: 10px 0;
+        width: 100%; /* Make each item take full width */
+        text-align: center;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 8px 12px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .navbar li a:hover {
+        background-color: lightgreen;
+        border-radius: 5px;
+    }
+}
+
