@@ -17,7 +17,7 @@ footer {
 }
 #banner h1 {
     position: absolute;
-    top: 10%; 
+    top: 5%; 
     left: 50%; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
@@ -119,6 +119,10 @@ footer {
         margin-right: auto; 
         max-width: 100%; 
         height: auto; 
+    }
+    #banner h1 { /*text sits lower in mobile*/
+        position: absolute;
+        top: 40%; 
     }
 }
 
