@@ -38,7 +38,7 @@ footer {
 .navinactive, .subnavinactive {
     background-color: lightblue;
 }
-.navbar li a {
+.navbar li, .navbar li a {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -46,10 +46,9 @@ footer {
     display: inline-block;
     transition: 0.3s;
 }
-.navinactive a:hover,  .subnavinactive a:hover{
+.navinactive:hover,  .subnavinactive:hover{
     background-color: lightskyblue;
     border-radius: 5px;
-    transform: scale(1.1);
 }
 /* Desktop styles */
 @media (min-aspect-ratio: 1/1) { 
@@ -72,7 +71,7 @@ footer {
         gap: 20px; 
     }
     .navbar li {
-        padding: 10px 15px;
+        padding: 15px;
     }
     .bannerimg {
         display: block; 
@@ -80,6 +79,14 @@ footer {
         margin-right: auto; 
         max-width: 60%; 
         height: auto; 
+    }
+    #home-article, #home-footer  {
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 60%; 
+        height: auto; 
+        padding: 1px 0px;
     }
 }
 /* Mobile styles */
