@@ -14,9 +14,11 @@ p {
 .image, .imagegallery {
     max-width: 50%;
 }
-.bannerimg, .servicesimg {
-    filter: brightness(40%);
+img {
     border-radius: 10px;
+}
+.bannerimg {
+    filter: brightness(40%);
 }
 #banner {
     position: relative; 
@@ -54,7 +56,7 @@ p {
     background-color: lightskyblue;
     border-radius: 5px;
 }
-#home-article, #home-footer, #services  {        
+article, footer, #services  {        
     padding: 5px 0px;
 }
 /* Desktop styles */
@@ -80,7 +82,7 @@ p {
     .navbar li {
         padding: 15px;
     }
-    #home-article, #home-footer, .bannerimg{
+    article, .footer, .bannerimg, .aboutimg{
         display: block; 
         margin-left: auto; 
         margin-right: auto; 
@@ -134,7 +136,7 @@ p {
         width: 80%; 
         text-align: center;
     }
-    .bannerimg, .servicesimg {
+    .bannerimg, .servicesimg, .aboutimg {
         display: block; 
         margin-left: auto; 
         margin-right: auto; 
