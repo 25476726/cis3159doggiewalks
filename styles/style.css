@@ -51,6 +51,9 @@ footer {
     background-color: lightskyblue;
     border-radius: 5px;
 }
+#home-article, #home-footer  {        
+    padding: 1px 0px;
+}
 /* Desktop styles */
 @media (min-aspect-ratio: 1/1) { 
     .navbar {
@@ -87,7 +90,6 @@ footer {
         margin-right: auto; 
         max-width: 60%; 
         height: auto; 
-        padding: 1px 0px;
     }
 }
 /* Mobile styles */
@@ -119,7 +121,7 @@ footer {
     }
     .navbar li {
         padding: 5px 0;
-        width: 80%; /* Make each item take full width */
+        width: 80%; 
         text-align: center;
     }
     .bannerimg {
