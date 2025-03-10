@@ -13,6 +13,7 @@ footer {
 }
 .bannerimg {
     filter: brightness(40%);
+    border-radius: 10px;
 }
 #banner {
     position: relative; 
