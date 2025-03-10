@@ -10,6 +10,7 @@ p {
 }
 .logo {
     max-height: 150px; 
+    border-radius: 0px;
 }
 .image, .imagegallery {
     max-width: 50%;
