@@ -25,7 +25,7 @@ footer {
     color: #fff;
     text-shadow: 2px 2px 8px midnightblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     transform: translate(-50%, -50%);
 }
 .imagegalleryport {
@@ -46,32 +46,30 @@ footer {
     display: inline-block;
     transition: 0.3s;
 }
-.navbar li a:hover {
+.navinactive a:hover,  .subnavinactive a:hover{
     background-color: lightskyblue;
     border-radius: 5px;
     transform: scale(1.1);
 }
 /* Desktop styles */
-@media (min-aspect-ratio: 1/1) { /* Applies when width > height */
+@media (min-aspect-ratio: 1/1) { 
     .navbar {
         display: flex;
         align-items: center;
-        justify-content: center; /* Logo on left, items centered */
+        justify-content: center; 
         background-color: lightblue;
-        padding: 0 20px; /* Remove top/bottom padding to match logo */
+        padding: 0 20px; 
         list-style-type: none;
-        height: auto; /* Dynamically adjust to logo height */
+        height: auto; 
     }
-    /* Logo styling */
     .navlogo {
         display: flex;
-        align-items: center; /* Ensures vertical alignment */
+        align-items: center;
         justify-content: left;
     }
-    /* Navigation Links */
     .navbar ul {
         display: flex;
-        gap: 20px; /* Space between items */
+        gap: 20px; 
     }
     .navbar li {
         padding: 10px 15px;
@@ -88,34 +86,32 @@ footer {
 @media (max-aspect-ratio: 1/1) {  
     .navbar {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center everything */
+        flex-direction: column; 
+        align-items: center; 
         justify-content: center;
         background-color: aliceblue;
-        padding: 0px 0; /* Add vertical padding */
+        padding: 0px 0; 
         list-style-type: none;
-        height: auto; /* Adjust to content */
+        height: auto; 
     }
-    /* Logo centered on top */
     .navlogo {
         display: flex;
         justify-content: center;
         margin-bottom: 10px; 
     }
-    .logo { /* smaller in mobile view */
-        max-height: 125px;
+    .logo { 
+        max-height: 125px; /*smaller in mobile as it was taking up too much room*/
     }
-    /* Navigation links stacked */
     .navbar ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px; /* Add spacing between menu items */
+        gap: 5px; 
         padding: 0;
     }
     .navbar li {
         padding: 5px 0;
-        width: 100%; /* Make each item take full width */
+        width: 80%; /* Make each item take full width */
         text-align: center;
     }
     .bannerimg {
