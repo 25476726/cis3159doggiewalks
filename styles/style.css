@@ -18,6 +18,17 @@ p {
 img {
     border-radius: 10px;
 }
+.listhead {
+    font-size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+}
+.listimg, #teammembers li {
+    list-style-type: none;
+}
+.servicelistimage {
+    max-width: 60%;
+}
 .bannerimg {
     filter: brightness(40%);
 }
@@ -56,6 +67,8 @@ img {
 .navbar li:not(:first-child) { /*does not apply to the logo*/
     border: 1px solid cornflowerblue;
     border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(100, 149, 237, 0.5); 
+
 }
 
 .navinactive:hover,  .subnavinactive:hover{
@@ -133,7 +146,7 @@ article, footer, #services  {
         margin-bottom: 10px; 
     }
     .logo { 
-        max-height: 125px; /*smaller in mobile as it was taking up too much room*/
+        max-height: 125px; /*smaller in mobile to reduce portion of screen taken by nav*/
     }
     .navbar ul {
         display: flex;

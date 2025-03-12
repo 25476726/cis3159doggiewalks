@@ -35,6 +35,34 @@
             <li>Warrington<br>Doggie Walks<br>47 Old Liverpool Road,<br>Warrington,<br>WA5 1AF</li>
         </ul>
         <p>Feel free to pop in or fill out the form below.</p>
+        <form>
+            <!-- Personal Info -->
+            <fieldset>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="dogName">Your Dog's Name</label>
+                <input type="text" id="dogName" name="dogName" required>
+                <label for="dogdob">Your Dog's Date of Birth</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <!-- Services interested in -->
+            <fieldset>
+                <legend>Services you are interested in</legend>
+                <label>Tick the services you are interested in for your pet</label>
+                <div>
+                    <input type="checkbox" id="dogwalking" name="serviceform" value="Dog Walking">
+                    <label for="dogwalking">Dog Walking</label>
+                    <input type="checkbox" id="housecalls" name="serviceform" value="House Calls">
+                    <label for="housecalls">House Calls</label>
+                    <input type="checkbox" id="daycare" name="serviceform" value="Day Care">
+                    <label for="daycare">Day Care</label>
+                </div>
+            </fieldset>
+        </form>
     </article>
     <footer>
         <!-- section added for CSS rule -->
