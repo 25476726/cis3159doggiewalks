@@ -31,20 +31,18 @@
         </ul>
         <p>Feel free to pop in or fill out the form below.</p>
         <form>
-            <!-- Personal Info -->
             <fieldset>
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address..." required>
                 <label for="dogName">Your Dog's Name</label>
                 <input type="text" id="dogName" name="dogName" required>
                 <label for="dogdob">Your Dog's Date of Birth</label>
                 <input type="date" id="birthDate" name="birthDate" required>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
             </fieldset>
-            <!-- Services interested in -->
             <fieldset>
                 <legend>Services you are interested in</legend>
                 <label>Tick the services you are interested in for your pet</label>
@@ -55,9 +53,28 @@
                     <label for="housecalls">House Calls</label>
                     <input type="checkbox" id="daycare" name="serviceform" value="Day Care">
                     <label for="daycare">Day Care</label>
+                    <input type="checkbox" id="petsitting" name="serviceform" value="Pet Sitting (Puppy and Elderly)">
+                    <label for="petsitting">Pet Sitting (Puppy and Elderly)</label>
+                    <input type="checkbox" id="smallpetvisits" name="serviceform" value="Small pet visits">
+                    <label for="smallpetvisits">Small pet visits</label>
+                    <input type="checkbox" id="overnight" name="serviceform" value="Overnight Pet Sitting">
+                    <label for="overnight">Overnight Pet Sitting</label>
                 </div>
             </fieldset>
-        </form>
+            <fieldset>
+                <label for="location">Your Nearest/Preferred Facility</label>
+                <select id="location" name="location">
+                    <option value="ormskirk">Ormskirk</option>
+                    <option value="southport">Southport</option>
+                    <option value="warrington">Warrington</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="subject">Additional comments</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <input type="submit" value="Submit">
+            </fieldset>
+          </form>
     </article>
     <footer>
         <!-- section added for CSS rule -->

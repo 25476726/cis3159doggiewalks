@@ -23,7 +23,7 @@ img {
     font-weight: bold;
     list-style-type: none;
 }
-.listimg, #teammembers li {
+.listimg, #teammembers li, .serviceslist li {
     list-style-type: none;
 }
 .servicelistimage {
@@ -75,7 +75,7 @@ img {
     background-color: lightskyblue;
     border-radius: 5px;
 }
-article, footer, #services  {        
+article, footer, .services  {        
     padding: 5px 0px;
 }
 /* Desktop styles */
@@ -113,7 +113,7 @@ article, footer, #services  {
         max-width: 60%; 
         height: auto; 
     }
-    #services {
+    .services {
         display: block; 
         margin-left: auto; 
         margin-right: auto; 
