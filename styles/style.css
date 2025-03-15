@@ -67,7 +67,7 @@ img {
     display: block;
     transition: 0.3s;
 }
-.navbar li:not(:first-child) { /*does not apply to the logo*/
+.navbar li:not(:first-child), .navbar { /*does not apply to the logo*/
     border: 1px solid cornflowerblue;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(100, 149, 237, 0.5); 
