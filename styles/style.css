@@ -5,7 +5,7 @@ body, header {
 footer {
     background-color: lightsteelblue;
 }
-p {
+p, li {
     font-size: large;
 }
 .logo {
@@ -81,6 +81,46 @@ img {
 article, footer, .services  {        
     padding: 5px 0px;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+fieldset {
+    border: 1px solid cornflowerblue;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    border: 1px solid deepskyblue;
+    border-radius: 4px;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: aquamarine;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
 /* Desktop styles */
 @media (min-aspect-ratio: 1/1) { 
     .navbar {
@@ -106,8 +146,8 @@ article, footer, .services  {
     }
     .navbar li {
         padding: 15px 0px;
-        flex-grow: 1; /* Makes all li items grow equally */
-        text-align: center; /* Center the text inside each item */
+        flex-grow: 1;
+        text-align: center; 
     }
     article, .footer, .bannerimg, .aboutimg{
         display: block; 

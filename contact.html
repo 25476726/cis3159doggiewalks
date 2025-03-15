@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/grid.css">
 </head>
 <body>
     <header>
@@ -24,11 +25,26 @@
     <article>
         <h1>Contact Us</h1>
         <p>We have a wide variety of daycare facilities, listed below is all our locations and their address’. </p>
-        <ul id="locations">
-            <li>Ormskirk<br>Doggie Walks<br>3-5 St Helens Road,<br>Ormskirk<br>L35 4PO</li>
-            <li>Southport<br>Doggie Walks<br>150 Lord Street,<br>Southport,<br>PR9 0NP</li>
-            <li>Warrington<br>Doggie Walks<br>47 Old Liverpool Road,<br>Warrington,<br>WA5 1AF</li>
-        </ul>
+        <section id="locations">
+            <address>
+                <h3>Doggie Walks Ormskirk:</h3>
+                <p>3-5 St Helens Road,</p>
+                <p>Ormskirk</p>
+                <p>L35 4PO</p>
+            </address>
+            <address>
+                <h3>Doggie Walks Southport:</h3>
+                <p>150 Lord Street,</p>
+                <p>Southport,</p>
+                <p>PR9 0NP</p>
+            </address>
+            <address>
+                <h3>Doggie Walks Warrington:</h3>
+                <p>47 Old Liverpool Road,</p>
+                <p>Warrington,</p>
+                <p>WA5 1AF</p>
+            </address>
+        </section>
         <p>Feel free to pop in or fill out the form below.</p>
         <form>
             <fieldset>
@@ -44,7 +60,6 @@
                 <input type="date" id="dogdob" name="dogdob" required>
             </fieldset>
             <fieldset>
-                <legend>Services you are interested in</legend>
                 <label>Tick the services you are interested in for your pet</label>
                 <div>
                     <input type="checkbox" id="dogwalking" name="serviceform" value="Dog Walking">
