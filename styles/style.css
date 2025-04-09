@@ -13,7 +13,7 @@ p, li {
     font-size: x-large;
 }
 h1, h2, h3, .navbar li, .navinactive, .navactive {
-    font-size: xx-large;
+    font-size: x-large;
 }
 h1, h2, h3, .navinactive, .navactive, .listhead {
     font-family: "DynaPuff", system-ui;
@@ -228,6 +228,7 @@ div {
     #banner h1 { /*text sits lower in mobile*/
         position: absolute;
         top: 40%; 
+        font-size: 1.75em;
     }
 }
 
