@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 body, header {
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,8 +10,14 @@ footer {
 p, li {
     font-size: large;
 }
-h1 {
+h1, h2, h3, .navbar li, .navinactive, .navactive {
     font-size: xx-large;
+}
+h1, h2, h3, .navinactive, .navactive {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "wdth" 100;
 }
 .logo {
     max-height: 150px; 
@@ -41,16 +48,20 @@ h1 {
 }
 #banner h1 {
     position: absolute;
-    top: 5%; 
+    top: 10%; 
     left: 50%; 
     color: #fff;
     text-shadow: 2px 2px 8px midnightblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25em;
     transform: translate(-50%, -50%);
 }
 .imagegalleryport {
     max-height: 875px;
+}
+nav ul {
+    margin-top: 0;
 }
 .navactive {
     background-color: lightsalmon;
@@ -148,20 +159,14 @@ div {
     .nav-contact li {
         padding: 1px 0; 
     }
-    article, .footer, .bannerimg, .aboutimg, .services{
+    article, .bannerimg, .aboutimg, .services{
         display: block; 
         margin-left: auto; 
         margin-right: auto; 
         max-width: 90%; 
         height: auto; 
     }
-    /* .services {
-        display: block; 
-        margin-left: auto; 
-        margin-right: auto; 
-        max-width: 80%; 
-        height: auto; 
-    } */
+
     .servicesimg {
         display: block; 
         margin-left: auto; 
