@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Patrick+Hand&display=swap');
 body, header {
-    background-image: url("background.png");
-    background-repeat: repeat;
+    /* background-image: url("background.png");
+    background-repeat: repeat; */
     background-color: aliceblue;
     font-family: "Patrick Hand", cursive;
     margin: 0;
 }
-footer {
+.navbar, footer {
     background-color: lightblue;
+    background-image: url("background.png");
+    background-repeat: repeat;
 }
 p, li {
     font-size: x-large;
@@ -75,10 +77,10 @@ nav ul {
     margin-bottom: 0;
 }
 .navactive {
-    background-color: lightsalmon;
+    background-color: rgba(255, 160, 122, 0.9);
 }
 .navinactive, button {
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.25);
 }
 .navbar li, .navbar li a {
     text-decoration: none;
@@ -89,7 +91,7 @@ nav ul {
     transition: 0.3s;
 }
 .navinactive:hover {
-    background-color: lightsalmon;
+    background-color: rgba(255, 160, 122, 0.75);
 }
 article, footer, .services  {        
     padding: 5px 0px;
@@ -137,7 +139,6 @@ div {
         display: flex;
         align-items: center;
         justify-content: center; 
-        background-color: lightblue;
         padding: 0 20px; 
         list-style-type: none;
         height: auto; 
@@ -188,12 +189,14 @@ div {
 }
 /* Mobile styles */
 @media (max-aspect-ratio: 1/1) {  
+    h1, h2, h3, p, li {
+        margin-inline: 5px;
+    }
     .navbar {
         display: flex;
         flex-direction: column; 
         align-items: center; 
         justify-content: center;
-        background-color: lightblue;
         padding: 0px 0; 
         list-style-type: none;
         height: auto; 
