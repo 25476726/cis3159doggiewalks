@@ -10,7 +10,6 @@ body, header {
     margin: 0;
 }
 .navbar, footer {
-    /* background-color: lightblue; */
     background-image: url("background.png"), linear-gradient(to right, lightskyblue, lightseagreen);
     background-repeat: repeat;
 }
