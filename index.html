@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -47,6 +48,31 @@
             <p>There's something to suit everyone but if you can't find what you're looking for don't hesitate to <a class="contactlink" href="contact.html">contact
                 us</a> and we'll find the perfect solution for you and your companion!</p>
             <img class="servicesimg" src="images/pexels-photo-283012.jpeg" alt="Image of a dog on a walk with wet paw prints on the floor">
+            <p>We have a wide variety of daycare facilities, listed below is all our locations and their address’.</p>
+        <section id="locations">
+            <address>
+                <h2>Doggie Walks Ormskirk:</h2>
+                <p>3-5 St Helens Road,</p>
+                <p>Ormskirk</p>
+                <p>L35 4PO</p>
+            </address>
+            <address>
+                <h2>Doggie Walks Southport:</h2>
+                <p>150 Lord Street,</p>
+                <p>Southport,</p>
+                <p>PR9 0NP</p>
+            </address>
+            <address>
+                <h2>Doggie Walks Warrington:</h2>
+                <p>47 Old Liverpool Road,</p>
+                <p>Warrington,</p>
+                <p>WA5 1AF</p>
+            </address>
+        </section>
+        <p>You can also view our locations on the interactive map we have provided. Feel free to pop in anytime!</p>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="js/map.js"></script>
     </article>
     <footer>
                 <!-- section added for CSS grid -->
