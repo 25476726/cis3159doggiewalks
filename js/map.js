@@ -17,17 +17,17 @@ var locations = [
     {
         name: "Doggie Walks Ormskirk",
         address: "3-5 St Helens Road, Ormskirk, L35 4PO",
-        coords: [57.4718, -2.9835], 
+        coords: [53.5656, -2.8941], 
     },
     {
         name: "Doggie Walks Southport",
         address: "150 Lord Street, Southport, PR9 0NP",
-        coords: [53.7173, -2.9957], 
+        coords: [53.6445, -3.0043], 
     },
     {
         name: "Doggie Walks Warrington",
         address: "47 Old Liverpool Road, Warrington, WA5 1AF",
-        coords: [53.3883, -2.6093], 
+        coords: [53.3894, -2.5980], 
     }
 ];
 
