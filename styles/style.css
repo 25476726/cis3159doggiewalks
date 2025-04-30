@@ -16,7 +16,7 @@ body, header {
 p, li {
     font-size: x-large;
 }
-h1, h2, h3, .navbar li, .navinactive, .navactive {
+h1, h2, h3, .navbar li, .navinactive, .navactive, strong {
     font-size: xx-large;
 }
 h1, h2, h3, .navinactive, .navactive, .listhead {
