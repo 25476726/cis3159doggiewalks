@@ -12,18 +12,19 @@ body, header {
     background-image: url("background.png"), linear-gradient(to right, lightskyblue, lightseagreen);
     background-repeat: repeat;
 }
-p, li {
+p, li, .offer{
     font-size: x-large;
 }
 h1, h2, h3, .navbar li, .navinactive, .navactive, strong {
     font-size: xx-large;
-}
-h1, h2, h3, .navinactive, .navactive, .listhead {
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+}
+.nav-contact li {
+    font-weight: 400;
 }
 .logo {
     max-height: 150px; 
@@ -71,7 +72,6 @@ h1, h2, h3, .navinactive, .navactive, .listhead {
     background-color: lightgreen;
     margin: 0;
     padding: 10px;
-    font-size: x-large;
     margin-bottom: 10px;
 }
 nav ul {
@@ -197,6 +197,12 @@ div {
 @media (max-aspect-ratio: 1/1) {  
     h1, h2, h3, p, li {
         margin-inline: 5px;
+    }
+    p, li, .offer {
+        font-size: large;
+    }
+    h1, h2, h3, .navbar li, .navinactive, .navactive, strong, .listhead {
+        font-size: x-large;
     }
     .navbar {
         display: flex;
